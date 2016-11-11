@@ -1,9 +1,8 @@
 #!/usr/bin/python
 
-import os
-import jnius_config
-from jnius import autoclass
 
-obj = autoclass('Eric')()
-print(obj.get())
+from jnius import autoclass
+obj = autoclass('com.leiyuntop.machine.ISCInfo')()
+print(obj.toString())    
+## 'com.leiyuntop.machine.ISCInfo@6d6f6e28'
 

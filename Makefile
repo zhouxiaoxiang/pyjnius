@@ -30,3 +30,4 @@ html:
 # use PYTHON3=1 to force python3 in other environments.
 tests: 
 	(cd tests; env CLASSPATH=../build/test-classes:../build/classes PYTHONPATH=..:$(PYTHONPATH) $(NOSETESTS) -v)
+
